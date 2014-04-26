@@ -1,0 +1,13 @@
+Preparation of Templates
+========================
+* If the PDF template works (can be read in), fine
+* If not, try any of the following
+  - try to preprocess it with pdftk
+  - try to convert it to ps (pdf2ps) and then back to pdf (ps2pdf)
+  - try to print it to a pdf printer 
+  - try to print it to a ps printer (best using a driver for an old 
+    Apple Laserwriter, will be just plain PS) and convert to pdf
+  which, with some luck, gives you a readable PDF template. If all 
+  that fails make a jpeg/bmp copy with a scanner. Pixel formats always 
+  work (which is the reason why for archiving only TIFF and OCR is a 
+  viable option as long as ADOBE is involved with PDF)

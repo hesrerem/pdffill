@@ -1,0 +1,49 @@
+# dat files contain the content that will be put in the template page
+# dat files will be parsed into a dictionary, a dictionary can 
+# be used instead a dat file as well
+
+# just text, a paragraph
+name=Susi Sinnlos
+
+# a paragraph mixed with predefined values
+dateplace=<date>, Golgafrincham
+
+# just the check for checkmarks
+check_veg=x
+check_meat=x
+check_you=x
+
+# longer text, continuation with \ at the end
+para1=This is a longer text, that is automatically inserted. \
+We do support escapes at the end of the line.
+para2=Avoid using text, that is longer than what fits onto \
+a single line. Because the origin of the point is at the \
+lower left corner and not, which would be more intuitive \
+on the upper left corner
+
+# a paragraph mixed with reportlab markup  
+para3=The text may include <b>bold</b>, \
+<i>italic</it> and mixtures such as <b><i>bold italic</i></b> \
+as well as <u>underline</u> and <strike>strike</strike> from \
+reportlab. Do <b><font color="red">not</font></b> \
+<font color=blue size=17>over<super>do</super></font> it.
+
+# use another style in layout, but that is already probably too complicated
+code=for i in range(17): <br />\
+&nbsp;&nbsp; print "Hello World %d" % i
+
+# instead of a paragraph some primitives such as many lines with a stroke
+# use just one of the primitives
+do1=<line width=2> 0, 0, 17, 0 </line>
+# dont1=<line width=2> 0, 0, 42, 0 </line>
+dobox1=<box width=3> 0, 0, 140, 20 </box>
+# do2=<line width=2> 0, 0, 17, 10,   0, 10, 17, 0 </line>
+dont2=<line width=2> 0, 0, 40, 10,   0, 10, 40, 0 </line>
+dobox2=<box width=1> 0, 0, 180, 20 </box>
+
+# one=<ellipse width=1> 0, 0, 12, 17 </ellipse>
+# two=<ellipse width=1> 0, 0, 12, 17 </ellipse>
+many=<ellipse width=1> 0, 0, 36, 19 </ellipse>
+# with primitives we ignore the style (but may use the width?)
+
+# it should be easy to define some additional pass through primitives

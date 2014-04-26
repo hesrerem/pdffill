@@ -1,0 +1,25 @@
+# pos files define where the holes are in the template page 
+# for each key we define the 
+# - x, y positions in document (0.0,0.0 lower left)
+# - optionally followed by a width, default page width
+# - optionally followed by a style name, default Normal
+# pos files will be parsed into a dictionary mapping keys to a 
+# 4 tuple with useful defaults, a dictionary can be used instead
+dateplace = 57, 720
+name = 306, 720
+check_veg = 58, 635
+check_meat = 58, 621
+check_you = 58, 607.5
+para1 = 66, 535
+para2 = 66, 510, 466
+para3 = 66, 480, 466
+code = 100, 410, 200, Code
+do1 = 137, 310
+dont1 = 158, 310
+dobox1 = 350, 310
+do2 = 137, 272
+dont2 = 158, 272
+dobox2 = 350, 269
+one = 123, 226
+two = 136, 226
+many = 148, 226

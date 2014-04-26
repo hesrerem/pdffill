@@ -1,0 +1,23 @@
+<html>
+<head><title>Sample Template Form</title></head>
+<body>
+<form action="pdffill.cgi" method="POST">
+  <input type="hidden" name="tplpdf" value="tpl.pdf" />
+  <input type="hidden" name="tplpos" value="tpl.pos" />
+  <input type="hidden" name="tpldat" value="tplcgi.dat" />
+  Name: <input type="text" name="name" value="%(name)s"> <br/>  
+  Place: <input type="text" name="dateplace" value="%(dateplace)s"> <br/>
+  What do you like? <br />
+  <input type="checkbox" name="check_veg" %(_check_veg)s >vegetarian</input><br />
+  <input type="checkbox" name="check_meat" %(_check_meat)s >meat, hot and spicy</input><br />
+  <input type="checkbox" name="check_you" %(_check_you)s >you</input><br />
+  <textarea name="para2" cols="50" rows="2">%(para2)s</textarea><br />
+  <input type="checkbox" name="check_dodont1" checked="checked">do 1</input><br />
+  <input type="checkbox" name="check_dodont2" >do 2</input><br />
+  Pens, i own <br />
+  <input type="radio" name="radio_pens" value="one">1</input><br />
+  <input type="radio" name="radio_pens" value="two">2</input><br />
+  <input type="radio" name="radio_pens" value="many">many</input><br />
+  <input type="submit" name="ok" value="Ok" />
+</form>
+</body></html>

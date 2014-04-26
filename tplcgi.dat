@@ -1,0 +1,33 @@
+# values as default values
+name=Rudi Ratlos
+dateplace=<date>, Huntringfurl
+
+# just the content for checkmarks
+check_veg=x
+check_meat=x
+check_you=x
+# preselection in dat, underscore means ignored by renderer
+_check_veg=checked="checked"
+_check_meat=checked="checked"
+_check_you=
+
+para1=This will always appear
+para2=This is the default for the HTML form
+
+# simple code
+code=print("Hello")
+
+# instead of a paragraph some primitives such as many lines with a stroke
+# use just one of the primitives
+do1=<line width=2> 0, 0, 17, 0 </line>
+dont1=<line width=2> 0, 0, 42, 0 </line>
+dobox1=<box width=3> 0, 0, 140, 20 </box>
+do2=<line width=2> 0, 0, 17, 10,   0, 10, 17, 0 </line>
+dont2=<line width=2> 0, 0, 40, 10,   0, 10, 40, 0 </line>
+dobox2=<box width=1> 0, 0, 180, 20 </box>
+
+
+# the content of the selected pens, no preselection
+one=<ellipse width=1> 0, 0, 12, 17 </ellipse>
+two=<ellipse width=1> 0, 0, 12, 17 </ellipse>
+many=<ellipse width=1> 0, 0, 36, 19 </ellipse>
