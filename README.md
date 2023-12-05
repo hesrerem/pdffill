@@ -17,7 +17,7 @@ which accepts commandline arguments and is a shortcut for
 In addition, there is a pdffill.cgi and tpl.html which demonstrates the 
 usage as CGI-program. tpl.dat is replaced by tplcgi.dat, which includes
 more information that is filtered by the CGI-processing and may include
-choice-information that won't be rendered but just processed.
+choice-information that will not be rendered but just processed.
 
 Hopefully, the examples are self explanatory. There is no command overview. 
 However, the examples should cover all of what is available.
